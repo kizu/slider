@@ -17,10 +17,25 @@ mixin switch(left, right)
     meta(http-equiv="X-UA-Compatible", content="IE=EmulateIE7,IE=edge")
     link(rel="stylesheet", href="slider.css")
     title Slider
+
   body
+    :markdown
+      # Just some slider
+
+      Made in response to [@pepelsbey](http://github.com/pepelsbey/)'s [experiment](http://pepelsbey.net/2012/08/stylish-switch/) (post in russian).
+
+      The point is fluid width that is automatically set to the widest element in the switch.
+
     p
       +switch
     p
-      +switch("вкл","выкл")
+      +switch("on","off")
     p
-      +switch("привет","ололо пыщ пыщ")
+      +switch("Hello!","Trollolo pysh pysh")
+    p
+      +switch("Some very, very long name","And a shortie")
+
+    +b('p').fork
+      +e.link(href="https://github.com/kizu/slider") Fork me on GitHub!
+
+    <!-- Yandex.Metrika counter --><div style="display:none;"><script type="text/javascript">(function(w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter10205473 = new Ya.Metrika({id:10205473, enableAll: true, trackHash:true}); } catch(e) { } }); })(window, "yandex_metrika_callbacks");</script></div><script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script><noscript><div><img src="//mc.yandex.ru/watch/10205473" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
