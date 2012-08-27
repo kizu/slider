@@ -1,0 +1,26 @@
+include bemto/bemto
+
+mixin switch(left, right)
+  +b('label').b-mail-switch
+    +e('input').checkbox(type="checkbox")
+    +e.input
+      +e.inner
+        +e.state_left
+          = left
+        +e.state_right
+          = right
+
++b('html').page
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width")
+    meta(http-equiv="X-UA-Compatible", content="IE=EmulateIE7,IE=edge")
+    link(rel="stylesheet", href="slider.css")
+    title Slider
+  body
+    p
+      +switch
+    p
+      +switch("вкл","выкл")
+    p
+      +switch("привет","ололо пыщ пыщ")

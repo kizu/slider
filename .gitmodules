@@ -1,0 +1,3 @@
+[submodule "bemto"]
+	path = bemto
+	url = git://github.com/kizu/bemto.git
